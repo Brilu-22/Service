@@ -1,0 +1,361 @@
+/* Insert the CSS from the ticket design here */
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  display: grid;
+  font-family: "Staatliches", cursive;
+  background-image: url(../pics/ret.svg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+nav {
+  width: 250px;
+  background-color: #640f0a;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #34495e;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-left: 430px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #555;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #4a90e2;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-image: url(../pics/1970.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+h3 {
+  margin-left: 500px;
+  padding: 50px;
+}
+.ticket {
+  margin: 20px auto;
+  display: flex;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.left {
+  display: flex;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+  background-image: url(../pics/1970.jpg);
+  background-position: center;
+  background-size: contain;
+  opacity: 0.85;
+}
+
+.admit-one {
+  position: absolute;
+  color: darkgray;
+  height: 250px;
+  padding: 0 10px;
+  letter-spacing: 0.15em;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.admit-one span:nth-child(2) {
+  color: white;
+  font-weight: 700;
+}
+
+.left .ticket-number {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px;
+}
+
+.ticket-info {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 5px 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.date span {
+  width: 100px;
+}
+
+.date span:first-child {
+  text-align: left;
+}
+
+.date span:last-child {
+  text-align: right;
+}
+
+.date .june-29 {
+  color: #ee6a04;
+  font-size: 20px;
+}
+
+.show-name {
+  font-size: 12px;
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+
+  color: #ee6a04;
+}
+
+.show-name h1 {
+  font-size: 12px;
+  font-family: "Poppins", system-ui;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #a51f14;
+}
+
+.time {
+  padding: 10px 0;
+  color: #a51f14;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.location {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 8px;
+  border-top: 1px solid gray;
+}
+
+.right {
+  width: 180px;
+  border-left: 1px dashed #404040;
+}
+
+.right .right-info-container {
+  height: 250px;
+  padding: 10px 10px 10px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.barcode img {
+  height: 100%;
+}
+
+.right .ticket-number {
+  color: gray;
+}
+
+#paper {
+  position: relative;
+  margin: 20px auto;
+  height: 400px;
+  width: 400px;
+  box-shadow: -3px 3px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+#top-left {
+  position: absolute;
+  background-color: #308060;
+  height: 350px;
+  width: 350px;
+}
+
+#top-right {
+  position: absolute;
+  right: 0;
+  background-color: #308060;
+  height: 350px;
+  width: 50px;
+  border-bottom-right-radius: 10px;
+}
+
+#top-right2 {
+  position: absolute;
+  right: 0;
+  background-color: #2b3948;
+  height: 355px;
+  width: 50px;
+  z-index: -1;
+  border-bottom-right-radius: 10px;
+}
+
+#bottom-left {
+  position: absolute;
+  bottom: 0;
+  background-color: #308060;
+  height: 50px;
+  width: 300px;
+}
+
+#bottom-left2 {
+  position: absolute;
+  bottom: 0;
+  background-color: #215943;
+  height: 50px;
+  width: 350px;
+  z-index: -1;
+  border-bottom-right-radius: 10px;
+}
+
+#fold {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #207050;
+}
+
+#shadow {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #308060;
+}
+
+#jawn {
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  height: 60px;
+  width: 60px;
+  z-index: -3;
+}
+
+#tip_gone {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  border-top: 57px solid transparent;
+  border-right: 57px solid #345;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+#saved-documents {
+  margin-top: 20px;
+  padding: 20px;
+}

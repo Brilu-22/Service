@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="css/cal.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Event Calendar</h1>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+      <div class="logo-container">
+        <img src="pics/click.svg" alt="Logo" />
+      </div>
+      <ul>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="services.php">Services</a></li>
+        <li><a href="calendar.html">Calendar Management</a></li>
+        <li><a href="document_creation.php">Document Creation</a></li>
+        <li><a href="live_chat.php">Live Chat</a></li>
+        <li><a href="project_management.php">Project Management</a></li>
+        <li>
+          <a href="social_media_management.php">Social Media Management</a>
+        </li>
+        <li><a href="ticket_system.php">Ticket System</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Event Creation Form -->
+      <form method="POST" action="add_event.php" id="event-form">
+        <h2>Create a New Event</h2>
+        <label for="title">Title:</label>
+        <input type="text" name="title" required /><br />
+
+        <label for="description">Description:</label>
+        <textarea name="description"></textarea><br />
+
+        <label for="start_time">Start Time:</label>
+        <input type="datetime-local" name="start_time" required /><br />
+
+        <label for="end_time">End Time:</label>
+        <input type="datetime-local" name="end_time" required /><br />
+
+        <button type="submit">Add Event</button>
+      </form>
+
+      <!-- Navigation to Previous and Next Month -->
+      <div class="prev-next">
+        <button id="prev-month">Previous Month</button>
+        <button id="next-month">Next Month</button>
+      </div>
+
+      <!-- Calendar Grid -->
+      <div class="calendar">
+        <div class="calendar-day">
+          <h4>1</h4>
+          <div class="event">Meeting with Client</div>
+          <div class="event">Project Deadline</div>
+        </div>
+        <div class="calendar-day">
+          <h4>2</h4>
+        </div>
+        <!-- Repeat for other days -->
+      </div>
+    </main>
+
+    <footer>
+      <p>Virtual Assistant Services</p>
+      <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <small>Designed by Virtual Assistant Services</small>
+    </footer>
+
+    <!-- Calendar Grid -->
+    <div class="calendar" id="calendar"></div>
+
+    <script src="js/calendar.js"></script>
+  </body>
+</html>
