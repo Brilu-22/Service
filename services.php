@@ -7,18 +7,19 @@ include 'includes/connection.php'; // Include the database connection
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
-    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/ser.css">
 </head>
 <body>
     <header class="header-container">
-        <h1>Our Virtual Assistant Services</h1>
+        <h1>:/Click-Us</h1>
+        <p>Learn more about Us </p>
         <nav>
             <div class="logo-container">
                 <a href="home.php"><img src="pics/click.svg" alt="Logo"></a> 
             </div>
             <ul>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="services.php">Services</a></li>
+                <li><a href="services.php">About Us</a></li>
                 <li><a href="calender.html">Calendar Management</a></li>  
                 <li><a href="document_creation.php">Document Creation</a></li>
                 <li><a href="live_chat.php">Live Chat</a></li>
@@ -94,7 +95,7 @@ include 'includes/connection.php'; // Include the database connection
         </div>
     </section>
 
-    <div class="banner">
+    <!--<div class="banner">
         <img src="pics/Frame 33.svg" alt="Virtual Assistant Services Banner">
     
         <div class="banner-text">
@@ -103,7 +104,38 @@ include 'includes/connection.php'; // Include the database connection
                 <p>Let us handle your tasks while you focus on growth.</p>
         </div>
     
-    </div>
+    </div>-->
+
+    <!-- Meet the Team Section -->
+    <section class="meet-the-team">
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="pics/team1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+                <p>John leads the team with over 10 years of experience in virtual assistance and project management.</p>
+            </div>
+            <div class="team-member">
+                <img src="pics/team2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Lead Project Manager</p>
+                <p>Jane oversees all project management tasks and ensures smooth team coordination.</p>
+            </div>
+            <div class="team-member">
+                <img src="pics/team3.jpg" alt="Team Member 3">
+                <h3>Emily Brown</h3>
+                <p>Social Media Strategist</p>
+                <p>Emily creates and manages content for social media platforms to drive engagement and growth.</p>
+            </div>
+            <div class="team-member">
+                <img src="pics/team4.jpg" alt="Team Member 4">
+                <h3>Michael Lee</h3>
+                <p>Customer Support Lead</p>
+                <p>Michael ensures that all customer inquiries and issues are handled promptly and professionally.</p>
+            </div>
+        </div>
+    </section>
 
 
     <main>

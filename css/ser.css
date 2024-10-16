@@ -31,7 +31,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem; /* Adjust size as needed */
+  font-size: 5.5rem; /* Adjust size as needed */
   margin-bottom: 20px;
   color: rgb(28, 28, 28);
 }
@@ -252,13 +252,13 @@ nav ul li a:hover {
   }
 }
 
-/*.bw-logo {
+.bw-logo {
   filter: grayscale(100%);
 }
 
 .slide img {
   filter: grayscale(100%);
-}*/
+}
 
 @keyframes scroll {
   0% {
@@ -459,79 +459,39 @@ nav ul li a:hover {
   }
 }
 
-/* Card styles */
-.card {
-  background-color: transparent;
-  border-radius: 8px;
-  /* border: 1px solid #152500;*/
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 48%;
-  height: 100%;
+.meet-the-team {
+  text-align: center;
+  padding: 50px 20px;
+  width: calc(100%-250px);
+  margin-left: 250px;
 }
 
-.image-card {
-  position: absolute; /* Allows free positioning */
-  left: 60px; /* Move the image card to the left, adjust as necessary */
-  top: 0; /* Align it vertically to the top */
-  border: 1px solid #192e00;
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  margin: 20px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
   border-radius: 50%;
-  width: 340px;
-  height: 330px;
-  margin-top: 80px;
 }
 
-/* Image card */
-.image-card img {
-  width: 340px;
-  height: 330px; /* Ensure the image fits within the card */
-  object-fit: cover;
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
 }
 
-.text-card {
-  width: 80%; /* Adjust to match the width of the image card */
-  height: auto; /* Let the height be dynamic */
-  max-height: 700px; /* Set a max height to avoid excessive size */
-  margin-left: 420px; /* Adjust spacing as needed */
-  overflow: hidden;
-  margin-bottom: 80px;
-}
-
-.text-card img {
-  width: 100%; /* Adjust to the width of the text-card */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Prevents image from overflowing */
-  object-fit: cover; /* Ensures the image fits within the container */
-}
-
-@media (max-width: 768px) {
-  .text-card {
-    width: 100%; /* Full width on smaller screens */
-    margin-left: 0;
-  }
-  .text-card img {
-    max-width: 100%; /* Adjusts the image size for smaller screens */
-  }
-}
-
-/* Ensure responsive design */
-@media (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
-    height: auto; /* Allow more height on small screens */
-  }
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 200px; /* Maintain height on smaller screens */
-  }
-  .image-card {
-    left: 0; /* Reset image position for smaller screens */
-    margin-bottom: 20px;
-  }
-  .text-card {
-    margin-left: 0;
-  }
+.team-member p {
+  margin: 5px 0;
+  font-size: 1em;
 }
 
 main {

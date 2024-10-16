@@ -15,18 +15,24 @@ if (!isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Assistant Services</title>
-    <link rel="stylesheet" href="css/sign.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-icons a {
+            margin: 0 10px; /* Adjust spacing as needed */
+            color: #333; /* Change color as needed */
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     
     <header>
-            
-
-            <div class="border">
-            <h1>Welcome to CLICKBAIT.</h1>
-        <p>Providing top-notch virtual assistant services to streamline your business needs.</p>
-        <h2>Welcome,<?php echo htmlspecialchars($_SESSION['name']); ?>!</h2>
-            </div>
+        <div class="border">
+            <h1>Simplify your Work. Maximize Your Time.</h1>
+            <p>Providing top-notch virtual assistant services to streamline your business needs.</p>
+            <h2>Welcome,<?php echo htmlspecialchars($_SESSION['name']); ?>!</h2>
+        </div>
 
         <nav>
         <div class="logo-container">
@@ -72,7 +78,7 @@ if (!isset($_SESSION['user_id'])) {
     <main>
     <section>
         <figure>
-            <img src="pics/admin.jpg" alt="Admin">
+            <img src="pics/vin.jpg" alt="Admin">
             <figcaption>Administrative Support</figcaption>
             
         </figure>
@@ -80,28 +86,28 @@ if (!isset($_SESSION['user_id'])) {
 
         <section>
             <figure>
-                <img src="pics/mouse.jpg" alt="mouse">
+                <img src="pics/books.jpg" alt="mouse">
                 <figcaption>Customer Service Support</figcaption>
             </figure>  
         </section>
 
         <section>
             <figure>
-                <img src="pics/cars.jpg" alt="car">
+                <img src="pics/cof.jpg" alt="car">
                 <figcaption>Social Media Management</figcaption>
             </figure>    
         </section>
 
         <section>
             <figure>
-                <img src="pics/camera.jpg" alt="camera">
+                <img src="pics/day.jpg" alt="camera">
                 <figcaption>Project Management</figcaption>
             </figure>
         </section>
 
         <section>
             <figure>
-                <img src="pics/point.jpg" alt="point">
+                <img src="pics/do.jpg" alt="point">
                 <figcaption>Specialized Support</figcaption>
             </figure>
         </section>
@@ -111,14 +117,14 @@ if (!isset($_SESSION['user_id'])) {
         </div>
     </main>
     <footer>
-    <p>&copy; <?php echo date("Y"); ?> Virtual Assistant Services</p>
+    <p>&copy; <?php echo date("Y"); ?> Clickbait . A Virtual Service Platform made for you </p>
     <div class="social-icons">
         <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
         <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
-    <small>Designed by Virtual Assistant Services</small>
+    <small>Designed by Zechaniah Hlongwane.</small>
 </footer>
 
 </body>

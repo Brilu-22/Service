@@ -14,12 +14,6 @@ header {
   text-align: center; /* Center the text */
 }
 
-header h1 {
-  font-size: 2.5rem; /* Adjust size as needed */
-  margin-bottom: 20px;
-  color: rgb(28, 28, 28);
-}
-
 .click p {
   font-family: "Poppins", system-ui;
   font-weight: 200;
@@ -46,10 +40,6 @@ title {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-header h1 {
-  justify-content: center;
 }
 
 header img {
@@ -152,13 +142,6 @@ header img {
   padding: 40px; /* Optional: Adds padding inside the border */
   margin-bottom: 25px;
   border-radius: 15px;
-}
-
-.border h1 {
-  background-color: red;
-  background: linear-gradient(90deg, #192e00 31%, #000000 71%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .click h1 {
@@ -370,7 +353,7 @@ figure {
   overflow: hidden;
   cursor: pointer;
   margin-bottom: 20px; /* Add some space below the figure */
-  border: 3px dotted #c5d86d; /* Add a dotted border */
+  border: 3px dotted #192e00; /* Add a dotted border */
 }
 
 figure:hover img {
