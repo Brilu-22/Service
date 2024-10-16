@@ -6,10 +6,7 @@
 .header-container {
   background-color: transparent; /* White background for the header */
   height: 300px;
-  padding: 20px;
-  border: 2px dotted #192e00; /* Dotted border around the header */
   text-align: center;
-  margin-bottom: -50px;
 }
 
 /* Style for the header image */
@@ -26,14 +23,20 @@ header {
   align-items: center;
   height: 40vh;
   margin-left: 250px; /* Offset by the width of the navbar */
-  padding: 20px;
   text-align: center; /* Center the text */
+
+  padding: 40px; /* Optional: Adds padding inside the border */
+  margin-bottom: 25px;
+  border-radius: 15px;
 }
 
 header h1 {
-  font-size: 5.5rem; /* Adjust size as needed */
+  font-size: 4.5rem; /* Adjust size as needed */
   margin-bottom: 20px;
-  color: rgb(28, 28, 28);
+  background: #192e00;
+  background: linear-gradient(to right, #192e00 53%, #3d3d3d 70%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .click p {
@@ -48,12 +51,9 @@ header h1 {
 main {
   margin-left: 250px; /* Offset by the width of the navbar */
   padding: 40px;
-  background: linear-gradient(
-    135deg,
-    #f3f4f7,
-    #eaeff5
-  ); /* Soft gradient background */
+  background: linear-gradient(135deg); /* Soft gradient background */
   border-radius: 15px;
+  border: 2px solid #192e00;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   max-width: 1000px;
   margin: 40px auto; /* Center it and add top-bottom spacing */
@@ -71,7 +71,8 @@ main {
 /* Left Block Styling */
 .left-block {
   width: 48%; /* Width of the left block */
-  background-color: #ffffff; /* White background */
+  background-color: #192e00;
+  color: #fff; /* White background */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
@@ -80,7 +81,7 @@ main {
 /* Right Block Styling */
 .right-block {
   width: 48%; /* Width of the right block */
-  background-color: #ffffff; /* White background */
+  background-color: #152500; /* White background */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
@@ -91,7 +92,7 @@ main {
 .right-block h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -102,7 +103,7 @@ main {
 .right-block p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #fff;
 }
 
 /* Button styling */
@@ -205,7 +206,7 @@ nav ul li a:hover {
 }
 
 .slider {
-  background: white;
+  background: red;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
   border: 1px solid rgb(58, 58, 58);
@@ -225,7 +226,7 @@ nav ul li a:hover {
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 100%
+      rgba(255, 0, 0, 0) 100%
     );
   }
 
@@ -252,12 +253,19 @@ nav ul li a:hover {
   }
 }
 
+.slider-section {
+  background-color: transparent !important;
+}
+
+.slider {
+  background-color: transparent !important;
+}
 .bw-logo {
   filter: grayscale(100%);
 }
 
 .slide img {
-  filter: grayscale(100%);
+  filter: #192e00(100%);
 }
 
 @keyframes scroll {
@@ -324,6 +332,11 @@ nav ul li a:hover {
 .hero-right img {
   width: 100%;
   border-radius: 5px;
+}
+
+.content-container {
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
 }
 
 /* Card container */
@@ -401,27 +414,6 @@ nav ul li a:hover {
   }
 }
 
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-family: "Gravitas One", sans-serif;
-  font-size: 2rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.banner-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.banner-text p {
-  font-size: 1.2rem;
-}
-
 .click h1 {
   font-family: "Poppins", system-ui;
   font-weight: 200;
@@ -479,9 +471,11 @@ nav ul li a:hover {
 }
 
 .team-member img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .team-member h3 {

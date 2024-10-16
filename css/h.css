@@ -144,6 +144,14 @@ header img {
   border-radius: 15px;
 }
 
+.border h1 {
+  font-size: 3.2rem;
+  background: #192e00;
+  background: linear-gradient(to right, #192e00 53%, #3d3d3d 70%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .click h1 {
   font-family: "Poppins", system-ui;
   font-weight: 200;
