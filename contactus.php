@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/create.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -16,30 +16,31 @@
     </style>
 </head>
 <body>
-<header class="header-container">
-        <h1>:/Contact-Us</h1>
-        <p>Ask Us and We'll help you . </p>
-        <nav>
-            <div class="logo-container">
-                <a href="home.php"><img src="pics/click.svg" alt="Logo"></a> 
+<header >
+    <h1>:/Contact-Us</h1>
+    <p>Ask Us and We'll help you . </p>
+    <nav>
+        <div class="logo-container">
+                <img src="pics/click.svg" alt="Logo">
             </div>
             <ul>
                 <li><a href="home.php">Home</a></li>
-                <li><a href="services.php">About Us</a></li>
+                <li><a href="services.php">Services</a></li>
                 <li><a href="calender.html">Calendar Management</a></li>  
                 <li><a href="document_creation.php">Document Creation</a></li>
                 <li><a href="live_chat.php">Live Chat</a></li>
                 <li><a href="project_management.php">Project Management</a></li>
                 <li><a href="social_media_management.php">Social Media Management</a></li>
                 <li><a href="ticket_system.php">Ticket System</a></li>
-                <li><a href="contactus.php">Contact Us</a></li>
-
             </ul>
-        </nav>
-    </header>
 
-    <!-- Contact Form -->
-    <div class="contact-form">
+            
+        </nav>
+</header>
+
+   <main>
+     <!-- Contact Form -->
+     <div >
         <h2>Contact Us</h2>
         <form id="contactForm" method="POST">
             <div class="form-group">
@@ -85,6 +86,7 @@
             </div>
         </div>
     </div>
+   </main>
 
     <!-- jQuery and Bootstrap JS (required for modal functionality) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

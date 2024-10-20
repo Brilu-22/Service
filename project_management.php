@@ -82,8 +82,8 @@ $result = $conn->query($query);
         
     </div>
     
-
-    <!-- Task creation form -->
+<main>
+<!-- Task creation form -->
     <form method="POST" action="" class="doc">
         <input type="text" name="task_name" placeholder="Task Name" required>
         <input type="date" name="deadline" placeholder="Deadline" required>
@@ -121,6 +121,8 @@ $result = $conn->query($query);
     // Close the database connection
     $conn->close();
     ?>
+</main>
+    
 
 <footer>
     <p>&copy; <?php echo date("Y"); ?> Clickbait . A Virtual Service Platform made for you </p>

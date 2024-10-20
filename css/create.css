@@ -20,177 +20,6 @@ header h1 {
   color: rgb(28, 28, 28);
 }
 
-.click p {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.2rem; /* Adjust size as needed */
-}
-
-/* Ensure the rest of the content isn't hidden by the navbar */
-main {
-  margin-left: 250px; /* Offset by the width of the navbar */
-  padding: 20px;
-}
-
-main {
-  margin-left: 250px; /* Same width as the nav bar */
-  padding: 20px; /* Optional: to add some padding inside the main content */
-}
-
-title {
-  margin-left: 250px; /* Same width as the nav bar */
-  padding: 20px; /* Optional: to add some padding inside the main content */
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header h1 {
-  justify-content: center;
-}
-
-header img {
-  width: 80px;
-  height: 80px;
-  margin-top: -100px;
-}
-
-/* Card container */
-.cards-container {
-  display: flex;
-  width: calc(100%-250px);
-  justify-content: flex-start;
-  align-items: center;
-  padding: 40px;
-  margin: 20px auto;
-  max-width: 1000px;
-  margin-left: 250px;
-  position: relative;
-  height: 400px;
-}
-
-/* Card styles */
-.card {
-  background-color: transparent;
-  border-radius: 8px;
-  border: 1px solid #152500;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 48%;
-  height: 100%;
-  z-index: 1;
-}
-
-.image-card {
-  position: absolute; /* Allows free positioning */
-  left: 60px; /* Move the image card to the left, adjust as necessary */
-  top: 0; /* Align it vertically to the top */
-  z-index: 1; /* Ensure the image is on top of the text card */
-}
-
-/* Image card */
-.image-card img {
-  width: 100%;
-  border-radius: 8px;
-  height: 320px; /* Ensure the image fits within the card */
-  object-fit: cover;
-}
-
-.text-card {
-  position: relative; /* Keeps it in the normal document flow */
-  margin-left: 380px; /* Adds space to the left to avoid overlap with image */
-  z-index: 2; /* Keeps the text below the image */
-  display: flex;
-  background-color: transparent;
-  margin-top: 150px;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-card img {
-  width: 100%;
-  border-radius: 8px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.text-card h2 {
-  font-size: 20px; /* Adjusted font size */
-  color: #333;
-  margin: 0 0 0px 0;
-}
-
-.text-card p {
-  font-size: 14px; /* Adjusted font size */
-  color: #8f0202;
-}
-
-/* Ensure responsive design */
-@media (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
-    height: auto; /* Allow more height on small screens */
-  }
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 200px; /* Maintain height on smaller screens */
-  }
-  .image-card {
-    left: 0; /* Reset image position for smaller screens */
-    margin-bottom: 20px;
-  }
-  .text-card {
-    margin-left: 0;
-  }
-}
-.border {
-  border: 2px dotted #181818; /* Adjust the color and thickness as needed */
-  padding: 40px; /* Optional: Adds padding inside the border */
-  margin-bottom: 25px;
-  border-radius: 15px;
-}
-
-.click h1 {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: normal;
-  border-right: 2px solid #c5d86d; /* Creates the cursor effect */
-  white-space: nowrap; /* Prevents the text from wrapping */
-  overflow: hidden; /* Hides text overflow */
-  width: 0; /* Initially hide text */
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  animation-iteration-count: infinite; /* Loop animation */
-  animation-delay: 3s; /* Wait for a moment before restarting */
-}
-
-/* Typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  } /* Resets the width to 0 after typing completes */
-}
-
-/* Blinking caret effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #c5d86d;
-  }
-}
-
 body,
 html {
   height: 100vh;
@@ -292,6 +121,7 @@ nav {
   top: 0;
   left: 0;
   padding-top: 20px;
+  z-index: 2;
 }
 
 nav ul {
@@ -318,9 +148,19 @@ nav ul li a:hover {
 }
 
 main {
-  margin-left: 250px; /* Align with sidebar */
-  padding: 20px; /* Padding around the content */
-  background-color: transparent; /* Light background for main content */
+  margin-left: 260px; /* Pushes the content away from the fixed sidebar */
+  padding: 20px;
+  background-color: #f5f5f5; /* Background for content */
+  z-index: 1;
+}
+
+h2 {
+  margin-left: 260px; /* Adjust this to make sure the h2 is not hidden behind the nav */
+  padding: 20px 0;
+  font-size: 24px;
+  color: #333;
+  z-index: 1; /* Ensure it sits on top */
+  position: relative; /* To avoid any overlap */
 }
 
 form {
@@ -371,6 +211,9 @@ form button:hover {
 .doc {
   margin-left: 250px; /* Same margin as the navbar width */
   width: calc(100% - 250px);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 footer {
   background-color: #152500;

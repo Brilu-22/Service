@@ -19,7 +19,7 @@ include 'includes/connection.php'; // Include the database connection
 </head>
 <body>
     <header class="header-container">
-        <h1>:/Click-Us</h1>
+        <h1>:/Click-Us...</h1>
         <p>Learn more about Us </p>
         <nav>
             <div class="logo-container">
@@ -41,57 +41,8 @@ include 'includes/connection.php'; // Include the database connection
     </header>
 
     
-    <!--<section class="slider-section" >
-        <h2>Our Partners</h2>
-        <div class="slider" >
-        <div class="slide-track">
-     Existing logos -->
-    <!--<div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-
-     New logos for Instagram, Twitter, Notion, and OneNote -->
-    <!--<div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="Instagram" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="Twitter" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="Notion" class="bw-logo" />
-    </div>
-    <div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="OneNote" class="bw-logo" />
-    </div>
-
-     Repeat slides to create a continuous loop -->
-    <!--<div class="slide">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" class="bw-logo" />
-    </div>
-</div>
-
-        </div>
-    </section>
-
-     Hero Section -->
+    
+     <!--Hero Section -->
     <section class="hero-banner">
         <div class="hero-content">
             <div class="hero-left">

@@ -4,7 +4,7 @@ include 'includes/connection.php'; // Include the database connection
 
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php"); // Redirect to login if not logged in
+    header("Location: signup.php"); // Redirect to login if not logged in
     exit();
 }
 ?>
@@ -17,6 +17,8 @@ if (!isset($_SESSION['user_id'])) {
     <title>Virtual Assistant Services</title>
     <link rel="stylesheet" href="css/h.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
+
     <style>
         .social-icons a {
             margin: 0 10px; /* Adjust spacing as needed */
@@ -113,7 +115,7 @@ if (!isset($_SESSION['user_id'])) {
         </section>
 
         <div class="cta">
-            <a href="contact.php" class="cta-button">Book a Consultation</a>
+            <a href="contactus.php" class="cta-button">Book a Consultation</a>
         </div>
     </main>
     <footer>

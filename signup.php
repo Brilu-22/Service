@@ -1,11 +1,11 @@
 <?php
 session_start();
-include 'includes/connection.php';
+include 'includes/connection.php';  // Include the database connection
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Hash the password for security
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);  // Hash the password for security
 
     $conn = Database::connect();
     if ($conn) {
@@ -18,8 +18,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Execute the statement
             if ($stmt->execute()) {
-                // Redirect to the login page after successful signup
-                header("Location: login.php");
+                // Store the user ID and name in the session
+                $_SESSION['user_id'] = $conn->lastInsertId();
+                $_SESSION['name'] = $name;
+
+                // Redirect to the home page after successful signup
+                header("Location: home.php");
                 exit();
             } else {
                 echo "Error: Could not execute the statement.";
@@ -35,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

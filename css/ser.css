@@ -3,10 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Style for the header container */
-.header-container {
+.header-container h1 {
   background-color: transparent; /* White background for the header */
   height: 300px;
   text-align: center;
+  font-size: 4.5rem; /* Adjust size as needed */
+  font-size: 3.2rem;
+  -webkit-text-stroke: 1px #2f5300;
+  color: transparent;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 /* Style for the header image */
@@ -28,15 +34,6 @@ header {
   padding: 40px; /* Optional: Adds padding inside the border */
   margin-bottom: 25px;
   border-radius: 15px;
-}
-
-header h1 {
-  font-size: 4.5rem; /* Adjust size as needed */
-  margin-bottom: 20px;
-  background: #192e00;
-  background: linear-gradient(to right, #192e00 53%, #3d3d3d 70%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .click p {
@@ -205,84 +202,11 @@ nav ul li a:hover {
   /*filter: brightness(0) invert(1); /* Invert the logo color to match dark background */
 }
 
-.slider {
-  background: red;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  border: 1px solid rgb(58, 58, 58);
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 1013px;
-  margin-left: 250px;
-
-  &::before,
-  &::after {
-    content: "";
-    height: 70px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 0, 0, 0) 100%
-    );
-  }
-
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-
-  &::before {
-    left: 0;
-    top: 0;
-  }
-
-  .slide-track {
-    animation: scroll 20s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-  }
-
-  .slide {
-    height: 100px;
-    width: 250px;
-  }
-}
-
-.slider-section {
-  background-color: transparent !important;
-}
-
-.slider {
-  background-color: transparent !important;
-}
-.bw-logo {
-  filter: grayscale(100%);
-}
-
-.slide img {
-  filter: #192e00(100%);
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
-
 /* Hero Section Styles */
 .hero-banner {
   width: calc(960px-250px);
-
   padding: 20px;
-  background-color: #141414;
+  background-color: #000000;
   border: 1px solid #141414;
   margin-bottom: 50px;
   margin-left: 250px;
@@ -313,7 +237,7 @@ nav ul li a:hover {
 }
 
 .hero-left button {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -366,89 +290,6 @@ nav ul li a:hover {
   width: 100%;
   height: 100%;
   object-fit: contain; /* Ensure the image covers the whole banner area */
-}
-
-/* CSS animation for cycling images */
-.click {
-  position: relative;
-  width: 280px;
-  height: 110px;
-  margin-left: 30px;
-}
-
-.image-cycle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0; /* Hide images initially */
-  animation: cycleImages 9s infinite; /* Cycle through images every 9 seconds */
-}
-
-.image-cycle:nth-child(1) {
-  animation-delay: 0s; /* Start with the first image */
-}
-
-.image-cycle:nth-child(2) {
-  animation-delay: 3s; /* Second image shows after 3 seconds */
-}
-
-.image-cycle:nth-child(3) {
-  animation-delay: 6s; /* Third image shows after 6 seconds */
-}
-
-@keyframes cycleImages {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 1;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.click h1 {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: normal;
-  border-right: 2px solid #c5d86d; /* Creates the cursor effect */
-  white-space: nowrap; /* Prevents the text from wrapping */
-  overflow: hidden; /* Hides text overflow */
-  width: 0; /* Initially hide text */
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  animation-iteration-count: infinite; /* Loop animation */
-  animation-delay: 3s; /* Wait for a moment before restarting */
-}
-
-/* Typing effect */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  } /* Resets the width to 0 after typing completes */
-}
-
-/* Blinking caret effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #c5d86d;
-  }
 }
 
 .meet-the-team {
