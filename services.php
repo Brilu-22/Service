@@ -41,12 +41,12 @@ include 'includes/connection.php'; // Include the database connection
     </header>
 
     
-    <section class="slider-section" >
+    <!--<section class="slider-section" >
         <h2>Our Partners</h2>
         <div class="slider" >
         <div class="slide-track">
-    <!-- Existing logos -->
-    <div class="slide">
+     Existing logos -->
+    <!--<div class="slide">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" class="bw-logo" />
     </div>
     <div class="slide">
@@ -68,8 +68,8 @@ include 'includes/connection.php'; // Include the database connection
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" class="bw-logo" />
     </div>
 
-    <!-- New logos for Instagram, Twitter, Notion, and OneNote -->
-    <div class="slide">
+     New logos for Instagram, Twitter, Notion, and OneNote -->
+    <!--<div class="slide">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="Instagram" class="bw-logo" />
     </div>
     <div class="slide">
@@ -82,8 +82,8 @@ include 'includes/connection.php'; // Include the database connection
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="OneNote" class="bw-logo" />
     </div>
 
-    <!-- Repeat slides to create a continuous loop -->
-    <div class="slide">
+     Repeat slides to create a continuous loop -->
+    <!--<div class="slide">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" class="bw-logo" />
     </div>
 </div>
@@ -91,7 +91,7 @@ include 'includes/connection.php'; // Include the database connection
         </div>
     </section>
 
-    <!-- Hero Section -->
+     Hero Section -->
     <section class="hero-banner">
         <div class="hero-content">
             <div class="hero-left">
