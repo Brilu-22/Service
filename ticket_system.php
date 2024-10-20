@@ -42,8 +42,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit a Support Ticket</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="css/tic.css">
+    <link rel="stylesheet" href="css/tick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
+
+    <style>
+        .social-icons a {
+            margin: 0 10px; /* Adjust spacing as needed */
+            color: #333; /* Change color as needed */
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Sidebar -->
@@ -59,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li><a href="live_chat.php">Live Chat</a></li>
             <li><a href="project_management.php">Project Management</a></li>
             <li><a href="social_media_management.php">Social Media Management</a></li>
-            <li><a href="ticket_system.php">Ticket System</a></li>
+            <li><a href="#">Ticket System</a></li>
         </ul>
     </nav>
     <h1>Submit a Support Ticket</h1>

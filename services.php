@@ -7,8 +7,9 @@ include 'includes/connection.php'; // Include the database connection
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
-    <link rel="stylesheet" href="css/ser.css">
+    <link rel="stylesheet" href="css/vice.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
     <style>
         .social-icons a {
             margin: 0 10px; /* Adjust spacing as needed */
@@ -19,8 +20,8 @@ include 'includes/connection.php'; // Include the database connection
 </head>
 <body>
     <header class="header-container">
-        <h1>:/Click-Us...</h1>
-        <p>Learn more about Us </p>
+        <h1>:/Click-Us</h1>
+        <p>Try Clickbait today , a virtual assistance service that works for you and your business. Let us help you with making your brand move more efficiently</p>
         <nav>
             <div class="logo-container">
                 <a href="home.php"><img src="pics/click.svg" alt="Logo"></a> 
@@ -57,23 +58,14 @@ include 'includes/connection.php'; // Include the database connection
         </div>
     </section>
 
-    <!--<div class="banner">
-        <img src="pics/Frame 33.svg" alt="Virtual Assistant Services Banner">
     
-        <div class="banner-text">
-            <div class="click">
-                <h1>:/CLICKBAIT..</h1>
-                <p>Let us handle your tasks while you focus on growth.</p>
-        </div>
-    
-    </div>-->
 
     <!-- Meet the Team Section -->
     <section class="meet-the-team">
         <h2>Meet the Team</h2>
         <div class="team-container">
 
-            <div class="team-member">
+            <div class="team-member1">
                 <img src="pics/E.jpg" alt="Team Member 1">
                 <h3>Zech Hlongs</h3>
                 <p>CEO & Founder</p>
@@ -86,7 +78,7 @@ include 'includes/connection.php'; // Include the database connection
                 <p>Lead Development Strategist</p>
                 <p>John helps to elevate the virtual assistance experience for all users.</p>
             </div>
-            <div class="team-member">
+            <div class="team-member1">
                 <img src="pics/B.jpg" alt="Team Member 3">
                 <h3>Jane Smith</h3>
                 <p>Lead Project Manager</p>
@@ -98,7 +90,7 @@ include 'includes/connection.php'; // Include the database connection
                 <p>Social Media Strategist</p>
                 <p>Emily creates and manages content for social media platforms to drive engagement and growth.</p>
             </div>
-            <div class="team-member">
+            <div class="team-member1">
                 <img src="pics/D.jpg" alt="Team Member 5">
                 <h3>Michael Lee</h3>
                 <p>Customer Support Lead</p>

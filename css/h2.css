@@ -410,6 +410,20 @@ figure:hover img {
   }
 }
 
+.cta-button {
+  text-decoration: none;
+  width: 100px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #192e00;
+  color: white;
+}
+
+.cta-button:hover {
+  background-color: #2f5300;
+}
+
 /* Style the footer */
 footer {
   background-color: #152500;

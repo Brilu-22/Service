@@ -14,10 +14,16 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtual assistance is just a click away.!">
+    <meta name="keywords" content="virtual assistance, google, appointments,artificial assistance">
+    <meta name="robots" content="index, follow">
     <title>Virtual Assistant Services</title>
-    <link rel="stylesheet" href="css/h.css">
+    <link rel="stylesheet" href="css/h2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
+    <title>
+        Simplify your Work. Maximize Your Time.Providing top-notch virtual assistant services to streamline your business needs.
+    </title>
 
     <style>
         .social-icons a {

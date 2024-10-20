@@ -3,12 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Style for the header container */
+.header-container {
+  border: 2px dotted #181818; /* Adjust the color and thickness as needed */
+  padding: 40px; /* Optional: Adds padding inside the border */
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+
 .header-container h1 {
   background-color: transparent; /* White background for the header */
   height: 300px;
   text-align: center;
   font-size: 4.5rem; /* Adjust size as needed */
-  font-size: 3.2rem;
   -webkit-text-stroke: 1px #2f5300;
   color: transparent;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
@@ -207,7 +213,7 @@ nav ul li a:hover {
   width: calc(960px-250px);
   padding: 20px;
   background-color: #000000;
-  border: 1px solid #141414;
+  border: 1px solid #202020;
   margin-bottom: 50px;
   margin-left: 250px;
 }
@@ -242,11 +248,12 @@ nav ul li a:hover {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  border: 1px solid #192e00;
   cursor: pointer;
 }
 
 .hero-left button:hover {
-  background-color: #555;
+  background-color: #192e00;
 }
 
 .hero-right {
@@ -317,6 +324,7 @@ nav ul li a:hover {
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  border: 2px solid rgb(28, 28, 28);
 }
 
 .team-member h3 {
@@ -325,6 +333,31 @@ nav ul li a:hover {
 }
 
 .team-member p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.team-member1 {
+  margin: 20px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.team-member1 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #2f5300;
+}
+
+.team-member1 h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.team-member1 p {
   margin: 5px 0;
   font-size: 1em;
 }

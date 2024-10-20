@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="css/tact.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
     <style>
         .social-icons a {
             margin: 0 10px; /* Adjust spacing as needed */
@@ -62,7 +63,7 @@
     <!-- Company Contact Details -->
     <div class="contact-details">
         <h3>Company Contact Details</h3>
-        <p><strong>Email:</strong> support@yourcompany.com</p>
+        <p><strong>Email:</strong> support@clickbait.com</p>
         <p><strong>Phone:</strong> +123 456 7890</p>
         <p><strong>Address:</strong> 123 Business Street, City, Country</p>
     </div>

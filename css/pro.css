@@ -2,18 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.header-container {
-  background-color: transparent; /* White background for the header */
-  height: 300px;
-  text-align: center;
-}
-
-/* Style for the header image */
-.header img {
-  max-width: 100px; /* Adjust the size as needed */
-  border-radius: 10px;
-}
-
 /* Center the header content in the main section */
 header {
   display: flex;
@@ -22,20 +10,23 @@ header {
   align-items: center;
   height: 40vh;
   margin-left: 250px; /* Offset by the width of the navbar */
+  padding: 20px;
   text-align: center; /* Center the text */
+}
 
+.header-container {
+  border: 2px dotted #181818; /* Adjust the color and thickness as needed */
   padding: 40px; /* Optional: Adds padding inside the border */
   margin-bottom: 25px;
   border-radius: 15px;
 }
 
-header h1 {
-  font-size: 4.5rem; /* Adjust size as needed */
-  margin-bottom: 20px;
-  background: #192e00;
-  background: linear-gradient(to right, #192e00 53%, #3d3d3d 70%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.header-container h1 {
+  font-size: 3.2rem;
+  -webkit-text-stroke: 1px #2f5300;
+  color: transparent;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 body,
@@ -48,27 +39,11 @@ html {
   background-image: url(../pics/back.svg);
   background-position: center;
   background-size: cover;
+  margin: 0;
+  padding: 0;
   color: white;
   font-size: 12px;
   letter-spacing: 0.1em;
-  padding: 20px;
-}
-
-.contact-form {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-.contact-details {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.modal-content {
-  text-align: center;
 }
 
 nav {
@@ -110,7 +85,7 @@ nav ul li a:hover {
 .logo-container {
   position: absolute; /* Allows the logo to be placed freely */
   right: 30px; /* Moves the logo to the right corner */
-  top: 50px; /* Moves the logo slightly down from the top */
+  top: 40px; /* Moves the logo slightly down from the top */
   padding: 20px;
 }
 
@@ -123,6 +98,132 @@ nav ul li a:hover {
   /*filter: brightness(0) invert(1); /* Invert the logo color to match dark background */
 }
 
+body {
+  font-family: "Poppins", sans-serif; /* Use the defined font */
+  margin: 0;
+  padding: 0; /* Light background color */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin-left: 250px; /* Offset by the width of the sidebar */
+  padding: 20px;
+  text-align: center; /* Center the text */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  margin-bottom: 20px;
+  color: rgb(28, 28, 28);
+}
+
+nav {
+  width: 250px;
+  background-color: #141414; /* Sidebar background color */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 100px; /* Space from the top */
+}
+
+nav ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #192e00; /* Hover effect color */
+}
+
+main {
+  width: calc(100%-250px);
+  margin-left: 260px;
+  padding: 20px;
+  /* Background for content */
+  z-index: 1;
+}
+
+main h2 {
+  margin-left: 260px; /* Adjust this to make sure the h2 is not hidden behind the nav */
+  padding: 20px 0;
+  font-size: 24px;
+  color: #333;
+  z-index: 1; /* Ensure it sits on top */
+  position: relative; /* To avoid any overlap */
+}
+
+form {
+  background: transparent;
+  border: 1px solid white;
+  padding: 20px;
+  margin-right: -600px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space below the form */
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: 4px;
+  color: #141414;
+}
+
+form button {
+  background-color: #192e00; /* Button background */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #223e01; /* Darker button on hover */
+}
+
+.saved-document {
+  background: #152500; /* White background for saved documents */
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between documents */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.doc {
+  width: 800px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
 footer {
   background-color: #152500;
   color: white;

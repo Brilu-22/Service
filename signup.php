@@ -46,11 +46,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Virtual assistance is just a click away.!">
+    <meta name="keywords" content="virtual assistance, google, appointments,artificial assistance">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
     <title>Signup</title>
 </head>
 <body>
 <div class="page">
+  <div class="logo-container">
+      <img src="pics/Frame 34.svg" alt="">
+  </div>
   <div class="container">
     <div class="left">
       <div class="login">Signup</div>

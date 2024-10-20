@@ -2,6 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gravitas+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin-left: 250px; /* Offset by the width of the navbar */
+  padding: 20px;
+  text-align: center; /* Center the text */
+}
+
 body,
 html {
   height: 100vh;
@@ -15,6 +26,21 @@ html {
   color: white;
   font-size: 12px;
   letter-spacing: 0.1em;
+}
+
+.title {
+  border: 2px dotted #181818; /* Adjust the color and thickness as needed */
+  padding: 40px; /* Optional: Adds padding inside the border */
+  margin-bottom: 25px;
+  border-radius: 15px;
+}
+
+.title h1 {
+  font-size: 3.2rem;
+  -webkit-text-stroke: 1px #2f5300;
+  color: transparent;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 nav {

@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tiny.cloud/1/pzcb47o65hvzuzgla71g7utxnmoyahu2ev38m4hzdklu890w/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
+
         tinymce.init({
             selector: '#documentEditor'
         });
     </script>
-    <link rel="stylesheet" href="css/create.css">
+    <link rel="stylesheet" href="css/serr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="pics/CLlogo.svg" type="image/x-icon">
+
+    <style>
+        .social-icons a {
+            margin: 0 10px; /* Adjust spacing as needed */
+            color: #333; /* Change color as needed */
+            text-decoration: none;
+        }
+    </style>
     <title>Document Creation</title>
 </head>
 <body>
@@ -30,8 +41,9 @@
         </ul>
     </nav>
 
-    <header>
+    <header class="header-container">
         <h1>Create a Document</h1>
+        <p>Come here and create your own personalized documents...</p>
     </header>
 
     <main>
@@ -88,7 +100,14 @@
     </main>
 
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> Virtual Assistant Services. All rights reserved.</p>
-    </footer>
+    <p>&copy; <?php echo date("Y"); ?> Clickbait . A Virtual Service Platform made for you </p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <small>Designed by Zechaniah Hlongwane.</small>
+</footer>
 </body>
 </html>
