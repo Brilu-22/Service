@@ -16,7 +16,7 @@
                 <img src="pics/click.svg" alt="Logo">
             </div>
             <ul>
-                <li><a href="home.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="calender.html">Calendar Management</a></li>  
                 <li><a href="document_creation.php">Document Creation</a></li>

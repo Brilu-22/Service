@@ -4,7 +4,7 @@ class Database {
     private static $servername = "localhost"; 
     private static $username = "root";
     private static $password = ""; 
-    private static $dbname = "clickbv0u2e1_virtual_assistance";
+    private static $dbname = "virtual_assistance";
 
     // Static method to connect to the database
     public static function connect() {
